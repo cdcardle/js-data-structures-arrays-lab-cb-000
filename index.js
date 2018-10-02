@@ -30,12 +30,12 @@ function prependDriver(name) {
 
 function removeLastDriver(name) {
   let copy = drivers.slice();
-  copy.shift(name);
+  copy.pop(name);
   return copy;
 }
 
 function removeFirstDriver(name) {
   let copy = drivers.slice();
-  copy.pop(name);
+  copy.shift(name);
   return copy;
 }
