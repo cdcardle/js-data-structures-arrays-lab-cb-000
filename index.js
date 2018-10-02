@@ -27,3 +27,15 @@ function prependDriver(name) {
   copy.unshift(name);
   return copy;
 }
+
+function removeLastDriver(name) {
+  let copy = drivers.slice();
+  copy.shift(name);
+  return copy;
+}
+
+function removeFirstDriver(name) {
+  let copy = drivers.slice();
+  copy.pop(name);
+  return copy;
+}
